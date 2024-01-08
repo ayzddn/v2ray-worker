@@ -1,4 +1,3 @@
-npm install npx
 name: Deploy Worker
 on:
   push:
