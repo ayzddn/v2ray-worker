@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+        - run:  npm install npx
       - run: npm i
       - run: sed -i s/KV_NAME/${{ secrets.KV_NAME }}/g wrangler.toml
       - name: Build & Deploy Worker
